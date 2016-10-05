@@ -1,4 +1,4 @@
-@CreateNewProject @ST_536083122
+@CreateNewProject @ST_203713354
 Feature: Create new project
 
 Background: 
@@ -10,7 +10,7 @@ And I check that project "rDefaultOne" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
 Then I see pop up "New Project" is opened
 
-@REL-824 @SC_544384695
+@REL-824 @SC_244855926
 Scenario: Create new project
 When I type "project_name2" into textbox 'Name' in pop-up 'New Project'
 And I type "rDefaultOne" into textbox 'Project key' in pop-up 'New Project'
@@ -22,7 +22,7 @@ And I see that project is added to panel 'Projects'
 And I select project in panel 'Projects' in page "Dashboard"
 And I see that all the entered data matches data in page 'Project Settings' for the new project
 
-@REL-613 @SC_554014852
+@REL-613 @SC_190362235
 Scenario: Check that validation message 'This project key is already in use' must be shown under the Key field filled with existing key
 When I type "project_name2" into textbox 'Name' in pop-up 'New Project'
 And I type "rDefaultOne" into textbox 'Project key' in pop-up 'New Project'
@@ -42,7 +42,7 @@ And I click on button "Create" on pop-up "New Project"
 And I see pop up "New Project" was not closed
 And I click on button "Cancel" on pop-up "New Project"
 
-@REL-617 @SC_469928980
+@REL-617 @SC_253525784
 Scenario: Check that project with existed name can be created
 When I type "project_name2" into textbox 'Name' in pop-up 'New Project'
 And I type "rDefaultOne" into textbox 'Project key' in pop-up 'New Project'
@@ -64,13 +64,13 @@ And I see that project is added to panel 'Projects'
 And I select project in panel 'Projects' in page "Dashboard"
 And I see that all the entered data matches data in page 'Project Settings' for the new project
 
-@REL-630 @SC_499524987
+@REL-630 @SC_242089659
 Scenario: Check that characters in project key name are in upper-case
 And I type "test" into textbox 'Project key' in pop-up 'New Project'
 And I see that characters in 'Project key' field in pop-up 'New Project' are in upper-case
 And I click on button "Cancel" on pop-up "New Project"
 
-@REL-629 @SC_492523578
+@REL-629 @SC_215685800
 Scenario: Check that project key consists of 3 or 4 characters
 And I type "te" into textbox 'Project key' in pop-up 'New Project'
 And I see a notification message "Must be 3 or 4 characters length" under second field
