@@ -1,4 +1,4 @@
-@ST_9098 @EditAndSaveBackground
+@ST_9135 @EditAndSaveBackground
 Feature: Edit and save background
 
 Background: 
@@ -14,7 +14,7 @@ And I click on button "Update" on pop-up "UPDATE DATA FROM GIT"
 Then I see success notification ""
 When I select feature "ElevenScenarios" in the tree
 
-@SC_38261 @REL-847
+@SC_38416 @REL-847
 Scenario: Edit + save by Save option
 And I select background in the table
 And I see scenario is expanded
@@ -26,7 +26,7 @@ And I click option "Save" under drop-down 'Actions' in scenario accordion
 Then I see that the scenario is collapsed
 And I see that changes are successfully saved and changed data matches data in Scenario Editor for the edited background
 
-@SC_38262 @REL-848
+@SC_38417 @REL-848
 Scenario: Edit + Save by Save scenarios pop-up
 And I select background in the table
 And I see scenario is expanded

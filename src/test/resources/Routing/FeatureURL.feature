@@ -1,7 +1,7 @@
-@ST_9117 @FeatureURL
+@ST_9154 @FeatureURL
 Feature: Feature url
 
-@SC_38322 @REL-759
+@SC_38477 @REL-759
 Scenario: Check story url
 Given I am in page "Default"
 And I am signed in

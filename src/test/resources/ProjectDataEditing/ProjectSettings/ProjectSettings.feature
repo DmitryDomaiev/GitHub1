@@ -1,4 +1,4 @@
-@ST_9114 @ProjectSettings
+@ST_9151 @ProjectSettings
 Feature: Project settings
 
 Background: 
@@ -17,7 +17,7 @@ And I click on button "Create" on pop-up "New Project"
 Then I see success notification ""
 And I see that project is added to panel 'Projects'
 
-@SC_38312 @REL-618
+@SC_38467 @REL-618
 Scenario: Check that project name can be edited with existed project name
 And I check that project "rDefaultTwo" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -33,7 +33,7 @@ And I select project in panel 'Projects' in page "Dashboard"
 And I change textbox 'Name' value to "project_name2" in page 'Project settings'
 Then I see success notification ""
 
-@SC_38313 @REL-611
+@SC_38468 @REL-611
 Scenario: Check ability to edit project from Dashboard page
 And I select project in panel 'Projects' in page "Dashboard"
 When I change textbox 'Name' value to "project_name12" in page 'Project settings'
