@@ -1,4 +1,4 @@
-@EditFolder @ST_198892783
+@ST_9089 @EditFolder
 Feature: Edit folder
 
 Background: 
@@ -20,7 +20,7 @@ And I click on button "Create" on pop-up "New folder"
 Then I see that new folder is successfully created
 And I see that the new folder is selected in the tree
 
-@REL-473 @SC_216009893
+@SC_38225 @REL-473
 Scenario: Name folder using valid symbols
 When I change textbox 'Folder name' value to "folderName_1_1" in folder info block under the tree
 And I click button 'Enter'
@@ -35,7 +35,7 @@ And I click button 'Save' for edited field under the tree
 Then I see success notification ""
 And I see that changes are successfully saved in textbox 'Folder name' in folder info block under the tree
 
-@REL-482 @SC_175429034
+@SC_38226 @REL-482
 Scenario: Edit folder name using invalid symbols
 When I change textbox 'Folder name' value to "@" in folder info block under the tree
 And I click button 'Enter'
@@ -54,7 +54,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@REL-477 @SC_240864659
+@SC_38227 @REL-477
 Scenario: Edit folder name using dot in the beginning
 When I change textbox 'Folder name' value to ".folderName_1_1" in folder info block under the tree
 And I click button 'Enter'
@@ -73,7 +73,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@REL-816 @SC_175063366
+@SC_38228 @REL-816
 Scenario: Cancel editing folder name
 When I change textbox 'Folder name' value to "folderName_1_1" in folder info block under the tree
 And I click button 'Esc'
@@ -85,7 +85,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@REL-817 @SC_161828346
+@SC_38229 @REL-817
 Scenario: Duplicate folder name
 And I select folder "feature" in the tree
 And I click button 'New folder' in panel 'Features'
@@ -104,4 +104,3 @@ When I change textbox 'Folder name' value to "folderName_1" in folder info block
 And I click button 'Save' for edited field under the tree
 And I see "Target folder already contains folder named 'folderName_1'" notifiction message under current input field
 And I click button 'Cancel' for edited field under the tree
-

@@ -1,7 +1,7 @@
-@RemoveScenario @ST_183656660
+@ST_9095 @RemoveScenario
 Feature: Remove scenario
 
-@REL-838 @SC_237043703
+@SC_38255 @REL-838
 Scenario: Remove scenario pop-up
 Given I am in page "Default"
 And I am signed in
@@ -29,4 +29,3 @@ Then I see that the new scenario is expanded
 When I click option "Delete" under drop-down 'Actions' in scenario accordion
 And I click on button "Delete" on pop-up "Delete scenario"
 Then I see that the scenario was successfully deleted
-

@@ -1,7 +1,7 @@
-@RemoveProject @ST_260735053
+@ST_9113 @RemoveProject
 Feature: Remove project
 
-@REL-610 @SC_240039782
+@SC_38310 @REL-610
 Scenario: Check ability to delete project from Dashboard page
 Given I am in page "Default"
 And I am signed in
@@ -20,4 +20,3 @@ When I delete project in panel 'Projects' in page "Dashboard"
 And I click on button "Delete" on pop-up "Delete account"
 Then I see success notification ""
 And I see that the project was successfully deleted
-

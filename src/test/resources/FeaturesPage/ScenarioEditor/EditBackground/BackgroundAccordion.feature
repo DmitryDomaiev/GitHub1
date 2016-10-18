@@ -1,7 +1,7 @@
-@BackgroundAccordion @ST_164288906
+@ST_9096 @BackgroundAccordion
 Feature: Background accordion
 
-@REL-850 @SC_242385640
+@SC_38256 @REL-850
 Scenario: Background accordion
 Given I am in page "Default"
 And I am signed in
@@ -29,4 +29,3 @@ And I see that changes are successfully saved and changed data matches data in S
 And I select step "2" in Ace Editor in scenario accordion
 And I type "And what is with <examples>" into string "3" in Scenario Editor in scenario accordion
 And I see that example table is not displayed for background
-

@@ -1,4 +1,4 @@
-@VCSSettings @ST_195386790
+@ST_9116 @VCSSettings
 Feature: VCS settings
 
 Background: 
@@ -22,7 +22,7 @@ And I see that all the entered data matches data in page 'Project Settings' for 
 And I click button 'Plus' near setting 'Version control system' in page 'Project settings'
 Then I see pop up "ADD GIT REPOSITORY PATH" is opened
 
-@REL-800 @SC_183675303
+@SC_38319 @REL-800
 Scenario: Check that VCS is added to project only once
 And I type "default" into textbox 'URL' in pop-up "ADD GIT REPOSITORY PATH"
 And I click on button "Add" on pop-up "ADD GIT REPOSITORY PATH"
@@ -31,7 +31,7 @@ When I selected menu "san4aGitAccount" in dropdown 'Account' at block VCS
 And I see that entered data matches data in setting 'Version control system' in page 'Project settings' for Git
 And I am not able to add or delete VCS
 
-@REL-829 @ignore @SC_224292815
+@SC_38320 @REL-829 @ignore
 Scenario: Check VCS with invalid account
 And I type "default" into textbox 'URL' in pop-up "ADD GIT REPOSITORY PATH"
 And I click on button "Add" on pop-up "ADD GIT REPOSITORY PATH"
@@ -39,7 +39,7 @@ Then I see that "Git" is added to setting 'Version control system' in page 'Proj
 And I selected menu "DansJira" in dropdown 'Account' at block VCS
 And I see error notification ""
 
-@REL-778 @SC_190794837
+@SC_38321 @REL-778
 Scenario: Check validation for path field for VERSION CONTROL SYSTEM table when you add VCS
 And I click on button "Add" on pop-up "ADD GIT REPOSITORY PATH"
 And I see a notification message "This field is required" under "1" required fields on pop-up "ADD GIT REPOSITORY PATH"
@@ -48,4 +48,3 @@ And I see a notification message "Must start with 'http(s)://'" under "1" requir
 And I type "default" into textbox 'URL' in pop-up "ADD GIT REPOSITORY PATH"
 And I click on button "Add" on pop-up "ADD GIT REPOSITORY PATH"
 Then I see that "Git" is added to setting 'Version control system' in page 'Project settings'
-

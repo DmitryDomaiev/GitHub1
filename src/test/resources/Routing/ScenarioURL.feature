@@ -1,7 +1,7 @@
-@ScenarioURL @ST_195475505
+@ST_9119 @ScenarioURL
 Feature: Scenario url
 
-@REL-761 @SC_180164181
+@SC_38332 @REL-761
 Scenario: Check url format when scenario is selected
 Given I am in page "Default"
 And I am signed in
@@ -13,4 +13,3 @@ Then I see story "search_book" is selected in the tree
 And I select "(no name)" scenario in the table
 And I see scenario is expanded
 Then I can see path matches RegEx "[default][A-Z,0-9]{3,4}/editor/ST_[a-z,A-Z,0-9]+/SC_[a-z,A-Z,0-9]+" in browser route
-

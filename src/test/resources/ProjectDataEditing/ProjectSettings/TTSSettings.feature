@@ -1,7 +1,7 @@
-@TTSSettings @ST_211468013
+@ST_9115 @TTSSettings
 Feature: TTS settings
 
-@REL-825 @SC_215802438
+@SC_38314 @REL-825
 Scenario: Check task tracker notifications
 Given I am in page "Default"
 And I am signed in
@@ -26,7 +26,7 @@ Then I see pop up "ADD JIRA PATH" was closed
 Then I see success notification ""
 Then I see that "https://jira.unitedsofthouse.com/" is added to setting 'Task tracking system' in page 'Project settings'
 
-@REL-830 @SC_260040277
+@SC_38315 @REL-830
 Scenario: Make changes in task tracker
 Given I am in page "Default"
 And I am signed in
@@ -51,7 +51,7 @@ Then I see pop up "ADD JIRA PATH" was closed
 And I see success notification ""
 And I see that "https://jira.unitedsofthouse.com/" is added to setting 'Task tracking system' in page 'Project settings'
 
-@REL-620 @ignore @SC_175309308
+@SC_38316 @REL-620 @ignore
 Scenario: Check that when all TTS are added button 'Add TTS' is disabled
 Given I am in page "Default"
 And I am signed in
@@ -93,7 +93,7 @@ And I see success notification ""
 And I see that "QC" is added to setting 'Task tracking system' in page 'Project settings'
 And I see that button 'Add TTS' is disabled
 
-@REL-623 @ignore @SC_178044722
+@SC_38317 @REL-623 @ignore
 Scenario: Check that alredy connected TTS are not displayed in dropdown list
 Given I am in page "Default"
 And I am signed in
@@ -130,4 +130,3 @@ Then I see pop up "Add task tracking system" is opened
 Then I see item "Jira" is absent under drop-down 'Name' in pop-up "Add task tracking system"
 Then I see item "Redmine" is absent under drop-down 'Name' in pop-up "Add task tracking system"
 And I click on button "Cancel" on pop-up "Add task tracking system"
-

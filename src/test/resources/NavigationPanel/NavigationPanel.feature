@@ -1,7 +1,7 @@
-@NavigationPanel @ST_183689167
+@ST_9107 @NavigationPanel
 Feature: Navigation Panel
 
-@REL-965 @SC_188243058
+@SC_38293 @REL-965
 Scenario: Check top and left navigation panels
 Given I am in page "Default"
 And I am signed in
@@ -35,4 +35,3 @@ And I see that 'Current Project' label equals "New Auto Test Project"
 And I click on item 'Recent Projects'
 And I see up to 5 last opened projects in dropdown 'Recent Projects'
 And I see 'View all projects' in dropdown'
-

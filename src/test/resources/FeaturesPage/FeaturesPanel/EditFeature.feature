@@ -1,4 +1,4 @@
-@EditFeature @ST_193468884
+@ST_9088 @EditFeature
 Feature: Edit feature
 
 Background: 
@@ -21,7 +21,7 @@ And I click button 'Enter'
 And I click on button "Create" on pop-up "New feature"
 Then I see that new feature is successfully created
 
-@REL-504 @SC_179584431
+@SC_38217 @REL-504
 Scenario: Tags functionality
     #user cannot start feature tags with "ST_" or "SC_"
     #spaces should be replaced with hyphens
@@ -83,7 +83,7 @@ Then I see that tag "tag-2" is absent on feature info under the tree
 When I click button 'Delete' for tag "tag-1" under the tree
 Then I see that tag "tag-1" is absent on feature info under the tree
 
-@REL-520 @SC_243320937
+@SC_38218 @REL-520
 Scenario: Valid symbols for tags
 When I type "tag1" into tags input textbox in feature info block under the tree
 And I click button 'Enter'
@@ -91,7 +91,7 @@ And I see that tag "tag1" is added to feature info under the tree
 When I type "tag2," into tags input textbox in feature info block under the tree
 And I see that tag "tag2" is added to feature info under the tree
 
-@REL-524 @SC_211300630
+@SC_38219 @REL-524
 Scenario: Invalid symbols for tags
 When I type "@tag1" into tags input textbox in feature info block under the tree
 And I click button 'Enter'
@@ -101,7 +101,7 @@ When I type ">tag2," into tags input textbox in feature info block under the tre
 And I see a notification message "&gt; is invalid for a tag name" under "1" required fields on Editor page
 And I see that tag ">tag2" is absent on feature info under the tree
 
-@REL-506 @SC_212342188
+@SC_38220 @REL-506
 Scenario: Valid symbols for file name field
 When I change textbox 'File name' value to "fileName_1_1" in feature info block under the tree
 And I click button 'Enter'
@@ -116,7 +116,7 @@ And I click button 'Save' for edited field under the tree
 Then I see success notification ""
 And I see that changes are successfully saved in textbox 'File name' in feature info block under the tree
 
-@REL-507 @SC_229994725
+@SC_38221 @REL-507
 Scenario: Invalid symbols for file name field
 When I change textbox 'File name' value to "@fileName_1_1" in feature info block under the tree
 And I click button 'Enter'
@@ -128,7 +128,7 @@ When I change textbox 'File name' value to "%fileName_1_3" in feature info block
 And I click button 'Save' for edited field under the tree
 And I see a notification message "Story file name must contain only the following characters: A-z 0-9 _ -" under "1" required fields on Editor page
 
-@REL-491 @SC_163631641
+@SC_38222 @REL-491
 Scenario: Edit Feature field
 When I change textbox 'Feature' value to "featureName_1_1" in feature info block under the tree
 And I click button 'Enter'
@@ -143,7 +143,7 @@ And I click button 'Save' for edited field under the tree
 Then I see success notification ""
 And I see that changes are successfully saved in textbox 'Feature' in feature info block under the tree
 
-@REL-525 @SC_238477121
+@SC_38223 @REL-525
 Scenario: Edit description field
 When I change textbox 'Description' value to "text1" in feature info block under the tree
 And I lose focus
@@ -153,4 +153,3 @@ When I change textbox 'Description' value to "text2" in feature info block under
 And I click button 'Save' for edited field under the tree
 Then I see success notification ""
 And I see that changes are successfully saved in textbox 'Description' in feature info block under the tree
-
