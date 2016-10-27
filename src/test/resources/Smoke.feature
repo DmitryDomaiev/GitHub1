@@ -410,7 +410,7 @@ And I click option "Save" under drop-down 'Actions' in scenario accordion
 Then I see that the scenario is collapsed
 And I see that changes are successfully saved and changed data matches data in Scenario Editor for the edited scenario
 
-@SC_38351 @REL-874 @tag
+@SC_38351 @tag @REL-874
 Scenario: Edit scenario + Save by Save Scenarios pop-up
     #And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB

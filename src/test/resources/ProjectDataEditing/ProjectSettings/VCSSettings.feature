@@ -31,7 +31,7 @@ When I selected menu "san4aGitAccount" in dropdown 'Account' at block VCS
 And I see that entered data matches data in setting 'Version control system' in page 'Project settings' for Git
 And I am not able to add or delete VCS
 
-@SC_38475 @REL-829 @ignore
+@SC_38475 @ignore @REL-829
 Scenario: Check VCS with invalid account
 And I type "default" into textbox 'URL' in pop-up "ADD GIT REPOSITORY PATH"
 And I click on button "Add" on pop-up "ADD GIT REPOSITORY PATH"
