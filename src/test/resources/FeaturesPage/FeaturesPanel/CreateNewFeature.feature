@@ -105,7 +105,7 @@ And I see that tag "tag1" is added on popup
 And I type "tag2," into tags input textbox in pop-up 'New feature'
 And I see that tag "tag2" is added on popup
 
-@SC_38365 @REL-528
+@SC_54223 @REL-528
 Scenario: Invalid symbols for tags
 And I type "@tag1" into tags input textbox in pop-up 'New feature'
 And I click button 'Enter'
