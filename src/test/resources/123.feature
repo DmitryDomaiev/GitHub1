@@ -6,3 +6,9 @@ Scenario:
 Given some given
 When do something
 Then I do...
+
+@SC_299409
+Scenario: 
+Given some given
+When do something
+Then I do...
