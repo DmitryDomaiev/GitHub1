@@ -360,7 +360,7 @@ And I lose focus
 Then I see success notification ""
 And I see that tag "tag2" is added to feature info under the tree
 
-@SC_299249 @REL-873 @tag
+@SC_299249 @tag @REL-873
 Scenario: Edit scenario + Save by Save option
     #And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB

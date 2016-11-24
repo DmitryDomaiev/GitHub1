@@ -124,7 +124,7 @@ And I see pop up "New Scenario" is opened
 And I see that checkbox 'background' is disabled in pop-up 'New Scenario'
 And I see that checkbox 'background' has tooltip "This story already has a background" in pop-up 'New Scenario'
 
-@SC_299300 @REL-811 @ignore
+@SC_299300 @ignore @REL-811
 Scenario: Critical functionality
 When I type "scenarioName" in textbox 'Name' in pop-up 'New Scenario'
 And I type "scenarioDescription" in textbox 'Description' in pop-up 'New Scenario'
