@@ -1,7 +1,7 @@
-@ST_9156 @ScenarioURL
+@ST_95132 @ScenarioURL
 Feature: Scenario url
 
-@SC_38487 @REL-761
+@SC_299386 @REL-761
 Scenario: Check url format when scenario is selected
 Given I am in page "Default"
 And I am signed in

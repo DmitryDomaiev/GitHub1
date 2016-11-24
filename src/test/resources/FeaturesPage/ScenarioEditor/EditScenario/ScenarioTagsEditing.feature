@@ -1,4 +1,4 @@
-@ST_9137 @ScenarioTagsEditing
+@ST_95113 @ScenarioTagsEditing
 Feature: Scenario tags editing
 
 Background: 
@@ -27,7 +27,7 @@ And I type "And another <step>" into string "2" in Scenario Editor in scenario a
 And I click on button "Create" on pop-up "New Scenario"
 Then I see that the new scenario is expanded
 
-@SC_38419 @REL-831
+@SC_299318 @REL-831
 Scenario: Tags functionality
   #user cannot start feature tags with "ST_" or "SC_"
   #spaces should be replaced with hyphens
@@ -96,7 +96,7 @@ And I see that tag "tag-2" is absent in scenario info
 And I click button 'Delete' for tag "tag-1" in scenario info
 And I see that tag "tag-1" is absent in scenario info
 
-@SC_38420 @REL-832
+@SC_299319 @REL-832
 Scenario: Valid symbols for tags
 And I type "tag1" into tags input textbox in scenario info block
 And I click button 'Enter'
@@ -104,7 +104,7 @@ And I see that tag "tag1" is added to scenario info
 And I type "tag2," into tags input textbox in scenario info block
 And I see that tag "tag2" is added to scenario info
 
-@SC_38421 @REL-833
+@SC_299320 @REL-833
 Scenario: Invalid symbols for tags
 And I type "@tag1" into tags input textbox in scenario info block
 And I click button 'Enter'

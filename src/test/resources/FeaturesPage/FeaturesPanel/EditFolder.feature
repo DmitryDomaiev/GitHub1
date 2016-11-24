@@ -1,4 +1,4 @@
-@ST_9126 @EditFolder
+@ST_95102 @EditFolder
 Feature: Edit folder
 
 Background: 
@@ -20,7 +20,7 @@ And I click on button "Create" on pop-up "New folder"
 Then I see that new folder is successfully created
 And I see that the new folder is selected in the tree
 
-@SC_38380 @REL-473
+@SC_299279 @REL-473
 Scenario: Name folder using valid symbols
 When I change textbox 'Folder name' value to "folderName_1_1" in folder info block under the tree
 And I click button 'Enter'
@@ -35,7 +35,7 @@ And I click button 'Save' for edited field under the tree
 Then I see success notification ""
 And I see that changes are successfully saved in textbox 'Folder name' in folder info block under the tree
 
-@SC_38381 @REL-482
+@SC_299280 @REL-482
 Scenario: Edit folder name using invalid symbols
 When I change textbox 'Folder name' value to "@" in folder info block under the tree
 And I click button 'Enter'
@@ -54,7 +54,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@SC_38382 @REL-477
+@SC_299281 @REL-477
 Scenario: Edit folder name using dot in the beginning
 When I change textbox 'Folder name' value to ".folderName_1_1" in folder info block under the tree
 And I click button 'Enter'
@@ -73,7 +73,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@SC_38383 @REL-816
+@SC_299282 @REL-816
 Scenario: Cancel editing folder name
 When I change textbox 'Folder name' value to "folderName_1_1" in folder info block under the tree
 And I click button 'Esc'
@@ -85,7 +85,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@SC_38384 @REL-817
+@SC_299283 @REL-817
 Scenario: Duplicate folder name
 And I select folder "feature" in the tree
 And I click button 'New folder' in panel 'Features'

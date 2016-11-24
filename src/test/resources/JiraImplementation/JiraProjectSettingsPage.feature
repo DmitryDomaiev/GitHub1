@@ -1,4 +1,4 @@
-@ST_9143 @JiraProjectSettingsPage
+@ST_95119 @JiraProjectSettingsPage
 Feature: Jira project settings page
 
 Background: 
@@ -32,7 +32,7 @@ And I see success notification ""
 And I click button 'Plus' near setting 'Task tracking system' in page 'Project settings'
 Then I see pop up "ADD TASK TRACKING SYSTEM" is opened
 
-@SC_38445 @REL-791
+@SC_299344 @REL-791
 Scenario: Check validation for Jira path field for Version Control System block on pop-up
 When I select item "Jira" under drop-down 'Name' in pop-up "ADD TASK TRACKING SYSTEM"
 And I type "https://nope" into textbox 'URL' in pop-up "ADD TASK TRACKING SYSTEM"
@@ -51,7 +51,7 @@ Then I see pop up "ADD TASK TRACKING SYSTEM" was closed
 Then I see success notification ""
 And I see that "Jira" is added to setting 'Task tracking system' in page 'Project settings'
 
-@SC_38446 @REL-792
+@SC_299345 @REL-792
 Scenario: Check account validation for Jira
 When I select item "Jira" under drop-down 'Name' in pop-up "ADD TASK TRACKING SYSTEM"
 And I type "https://jira.unitedsofthouse.com/" into textbox 'URL' in pop-up "ADD TASK TRACKING SYSTEM"
@@ -70,7 +70,7 @@ Then I see success notification ""
 And I am in page "Editor"
 And I see that button 'Upload from Jira' is enabled
 
-@SC_38447 @REL-793
+@SC_299346 @REL-793
 Scenario: Check validation for Jira path field for Test Tracking System block on Project Settings page
 When I select item "Jira" under drop-down 'Name' in pop-up "ADD TASK TRACKING SYSTEM"
 And I type "https://jira.unitedsofthouse.com/" into textbox 'URL' in pop-up "ADD TASK TRACKING SYSTEM"

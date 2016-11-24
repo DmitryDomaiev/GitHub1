@@ -1,7 +1,7 @@
-@ST_9133 @BackgroundAccordion
+@ST_95109 @BackgroundAccordion
 Feature: Background accordion
 
-@SC_38411 @REL-850
+@SC_299310 @REL-850
 Scenario: Background accordion
 Given I am in page "Default"
 And I am signed in
