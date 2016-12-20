@@ -1,4 +1,4 @@
-@ST_95099 @CreateNewFeature
+@ST_32072 @CreateNewFeature
 Feature: Create new feature
 
 Background: 
@@ -15,12 +15,12 @@ Then I see success notification ""
 And I click button 'New feature' in panel 'Features'
 And I see pop up "New Feature" is opened
 
-@SC_299260 @REL-490
+@SC_124874 @REL-490
 Scenario: Invalid symbols nor file name field
 When I type "!@3A2_-" into textbox 'File name' in pop-up 'New feature'
 Then I see a notification message "Story file name must contain only the following characters: A-z 0-9 _ -" under second field
 
-@SC_299261 @REL-529
+@SC_124875 @REL-529
 Scenario: Valid symbols for file name
 When I type "featureName_1" into textbox 'Feature' in pop-up 'New feature'
 And I type "fileName_1" into textbox 'File name' in pop-up 'New feature'
@@ -31,7 +31,7 @@ And I click on button "Create" on pop-up "New feature"
 Then I see that new feature is successfully created
 And I see that the new feature is selected in the tree
 
-@SC_299262 @REL-821
+@SC_124876 @REL-821
 Scenario: Tags functionality
     #user cannot start feature tags with "ST_" or "SC_"
     #spaces should be replaced with hyphens
@@ -97,7 +97,7 @@ And I see that tag "tag-2" is absent on popup
 And I click button 'Delete' for tag "tag-1" on Pop Up
 And I see that tag "tag-1" is absent on popup
 
-@SC_299263 @REL-505
+@SC_124877 @REL-505
 Scenario: Valid symbols for tags
 And I type "tag1" into tags input textbox in pop-up 'New feature'
 And I click button 'Enter'
@@ -105,7 +105,7 @@ And I see that tag "tag1" is added on popup
 And I type "tag2," into tags input textbox in pop-up 'New feature'
 And I see that tag "tag2" is added on popup
 
-@SC_299264 @REL-528
+@SC_124878 @REL-528
 Scenario: Invalid symbols for tags
 And I type "@tag1" into tags input textbox in pop-up 'New feature'
 And I click button 'Enter'

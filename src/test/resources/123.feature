@@ -1,13 +1,13 @@
-@ST_95133
+@ST_32070
 Feature: 123
 
-@SC_299387
+@SC_124848
 Scenario: 
 Given some given
 When do something
 Then I do...
 
-@SC_299409
+@SC_124849
 Scenario: 
 Given some given
 When do something

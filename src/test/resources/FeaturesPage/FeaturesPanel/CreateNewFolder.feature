@@ -1,4 +1,4 @@
-@ST_95100 @CreateNewFolder
+@ST_32073 @CreateNewFolder
 Feature: Create new folder
 
 Background: 
@@ -16,7 +16,7 @@ And I select folder "feature" in the tree
 And I click button 'New folder' in panel 'Features'
 And I see pop up "New folder" is opened
 
-@SC_299266 @REL-480
+@SC_124880 @REL-480
 Scenario: Name folder using invalid symbols
 When I type "!@#" into textbox 'Name' in pop-up 'New folder'
 And I click on button "Create" on pop-up "New folder"
@@ -24,7 +24,7 @@ And I see a notification message "Allowed characters: ' A-z 0-9 _ . - '" under "
 And I see pop up "New folder" was not closed
 And I click on button "Cancel" on pop-up "New folder"
 
-@SC_299267 @REL-476
+@SC_124881 @REL-476
 Scenario: Name new folder using dot in the beginning
 When I type ".dot" into textbox 'Name' in pop-up 'New folder'
 And I click on button "Create" on pop-up "New folder"
@@ -32,7 +32,7 @@ And I see a notification message "Can't start with '.'" under "1" required field
 And I see pop up "New folder" was not closed
 And I click on button "Cancel" on pop-up "New folder"
 
-@SC_299268 @REL-471
+@SC_124882 @REL-471
 Scenario: Name folder using valid symbols
 When I type "folderName_1" into textbox 'Name' in pop-up 'New folder'
 And I click on button "Create" on pop-up "New folder"
@@ -42,7 +42,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@SC_299269 @REL-444
+@SC_124883 @REL-444
 Scenario: Name duplicate folder
 When I type "folderName_1" into textbox 'Name' in pop-up 'New folder'
 And I click on button "Create" on pop-up "New folder"

@@ -1,4 +1,4 @@
-@ST_95106 @NewScenarioPopup
+@ST_32079 @NewScenarioPopup
 Feature: New Scenario Popup
 
 Background: 
@@ -24,7 +24,7 @@ And I see that the new feature is selected in the tree
 And I click button 'New Scenario'
 And I see pop up "New Scenario" is opened
 
-@SC_299296 @REL-804
+@SC_124910 @REL-804
 Scenario: Tags functionality
   #user cannot start feature tags with "ST_" or "SC_"
   #spaces should be replaced with hyphens
@@ -91,7 +91,7 @@ And I see that tag "tag-2" is absent on popup
 And I click button 'Delete' for tag "tag-1" on Pop Up
 And I see that tag "tag-1" is absent on popup
 
-@SC_299297 @REL-805
+@SC_124911 @REL-805
 Scenario: Valid symbols for tags
 And I type "tag1" into tags input textbox in pop-up 'New Scenario'
 And I click button 'Enter'
@@ -99,7 +99,7 @@ And I see that tag "tag1" is added on popup
 And I type "tag2," into tags input textbox in pop-up 'New Scenario'
 And I see that tag "tag2" is added on popup
 
-@SC_299298 @REL-806
+@SC_124912 @REL-806
 Scenario: Invalid symbols for tags
 And I type "@tag1" into tags input textbox in pop-up 'New Scenario'
 And I click button 'Enter'
@@ -109,7 +109,7 @@ And I type ">tag2," into tags input textbox in pop-up 'New Scenario'
 And I see a notification message "&gt; is invalid for a tag name" under "1" required fields on pop-up "New feature"
 And I see that tag ">tag2" is absent on popup
 
-@SC_299299 @REL-808
+@SC_124913 @REL-808
 Scenario: Prohibiting to create the second Background
 When I click checkbox 'background' in pop-up 'New Scenario'
 And I type "backgroundName" as background name in textbox 'Name' in pop-up 'New Scenario'
@@ -124,7 +124,7 @@ And I see pop up "New Scenario" is opened
 And I see that checkbox 'background' is disabled in pop-up 'New Scenario'
 And I see that checkbox 'background' has tooltip "This story already has a background" in pop-up 'New Scenario'
 
-@SC_299300 @ignore @REL-811
+@SC_124914 @ignore @REL-811
 Scenario: Critical functionality
 When I type "scenarioName" in textbox 'Name' in pop-up 'New Scenario'
 And I type "scenarioDescription" in textbox 'Description' in pop-up 'New Scenario'
@@ -142,7 +142,7 @@ And I click on button "Create" on pop-up "New Scenario"
 Then I see that the new scenario is expanded
 And I see that new scenario is created and entered data matches data in Scenario Editor for the new scenario
 
-@SC_299301 @REL-860
+@SC_124915 @REL-860
 Scenario: Critical functions - background
 When I click checkbox 'background' in pop-up 'New Scenario'
 And I type "backgroundName" as background name in textbox 'Name' in pop-up 'New Scenario'
@@ -153,7 +153,7 @@ And I click on button "Create" on pop-up "New Scenario"
 Then And I see that new background is successfully created and entered data matches data in Scenario Editor for the new background
 And I see that the new background is expanded
 
-@SC_299302 @REL-807
+@SC_124916 @REL-807
 Scenario: Background functionality
 When I click checkbox 'background' in pop-up 'New Scenario'
 And I type "backgroundName" as background name in textbox 'Name' in pop-up 'New Scenario'
@@ -162,7 +162,7 @@ And I type "Given step" in the first string in Scenario Editor in pop-up 'New Sc
 And I type "And another <step>" into string "2" in Scenario Editor in scenario accordion
 And I see that example table is not displayed in the new background in Scenario Editor
 
-@SC_299303 @REL-841
+@SC_124917 @REL-841
 Scenario: Background validation
 When I click checkbox 'background' in pop-up 'New Scenario'
 And I type "backgroundName" as background name in textbox 'Name' in pop-up 'New Scenario'
@@ -172,7 +172,7 @@ And I click on button "Create" on pop-up "New Scenario"
 And I see pop up "New Scenario" was not closed
 And I see a notification message "Background must start with 'Given'" under "1" required fields on pop-up "New feature"
 
-@SC_299304 @REL-858
+@SC_124918 @REL-858
 Scenario: BDD validation when create a scenario in feature having a back
     #without keywords in the beginning of each string
     #less then 2 lines
@@ -238,7 +238,7 @@ And I see pop up "New Scenario" was closed
 Then I see that the new scenario is expanded
 And I see that new scenario is created and entered data matches data in Scenario Editor for the new scenario
 
-@SC_299305 @REL-859
+@SC_124919 @REL-859
 Scenario: BDD validation when create a scenario in feature having no back
 When I type "scenarioName" in textbox 'Name' in pop-up 'New Scenario'
 And I type "scenarioDescription" in textbox 'Description' in pop-up 'New Scenario'
@@ -250,7 +250,7 @@ And I click on button "Create" on pop-up "New Scenario"
 And I see pop up "New Scenario" was not closed
 And I see a notification message "Scenario must start with 'Given' (when feature doesn't have a background)" under "1" required fields on pop-up "New feature"
 
-@SC_299306 @REL-810
+@SC_124920 @REL-810
 Scenario: Ace Editor functionality
     #autocomplete list should be displayed when required
     #select a word / a stepline from autocomplete list / keyword should present in each step, line break should be added befor each When
@@ -298,7 +298,7 @@ And I click on button "Create" on pop-up "New Scenario"
 And I see scenario is expanded
 And I see that created scenario contains no empty lines
 
-@SC_299307 @ignore @REL-809
+@SC_124921 @ignore @REL-809
 Scenario: Example table
 When I type "Given I have an <example> parameter" in the first string in Scenario Editor in pop-up 'New Scenario'
 And I see that example table header "example" is present
